@@ -1452,10 +1452,9 @@
 														<select data-control="select2"
 															data-placeholder="Select a format" data-hide-search="true"
 															name="format" class="form-select form-select-solid">
-															<option value="excell">Excel</option>
-															<option value="pdf">PDF</option>
-															<option value="cvs">CVS</option>
-															<option value="zip">ZIP</option>
+<option value="excel">Excel</option>
+<option value="pdf">PDF</option>
+<option value="csv">CSV</option>
 														</select>
 														<!--end::Input-->
 													</div>
@@ -1487,7 +1486,7 @@
 								<!--end::Modal - New Card-->
 								<!--end::Modals-->
 							</div>
-							<!--end::Content container-->
+<!--end::Content container-->
 						</div>
 						<!--end::Content-->
 					</div>
@@ -5892,6 +5891,10 @@
 	<!--begin::Global Javascript Bundle(mandatory for all pages)-->
 	<script src="assets/plugins/global/plugins.bundle.js"></script>
 	<script src="assets/js/scripts.bundle.js"></script>
+	<!-- Export dependencies -->
+	<script src="assets/plugins/custom/xlsx/xlsx.full.min.js"></script>
+	<script src="assets/plugins/custom/jspdf/jspdf.umd.min.js"></script>
+	<script src="assets/plugins/custom/jspdf/jspdf.plugin.autotable.min.js"></script>
 	<!--end::Global Javascript Bundle-->
 	<!--begin::Vendors Javascript(used for this page only)-->
 	<script src="assets/plugins/custom/datatables/datatables.bundle.js"></script>
@@ -5906,6 +5909,9 @@
 	<script src="assets/js/custom/utilities/modals/upgrade-plan.js"></script>
 	<script src="assets/js/custom/utilities/modals/create-app.js"></script>
 	<script src="assets/js/custom/utilities/modals/users-search.js"></script>
+	<script src="assets/js/custom/apps/ecommerce/reports/customer-orders/customer-orders.js"></script>
+	<!-- Patch loader to ensure export works after all dependencies -->
+	<script src="assets/js/custom/apps/ecommerce/customers/listing/export_patch_loader.js"></script>
 	<!--end::Custom Javascript-->
 	<!--end::Javascript-->
 </body>
